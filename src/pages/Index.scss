@@ -1,0 +1,84 @@
+$blue: #5c96bc;
+$green: #42e31b;
+$yellow: #fede16;
+$tan: #f5bc55;
+$red: #c60600;
+
+.Index {
+  height: 100vh;
+  padding-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  display: grid;
+  grid-gap: 1rem;
+
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 5fr 2.5fr 2.5fr;
+  grid-template-areas:
+    "logo logo player player"
+    "episode-log episode-log  cartoon cartoon"
+    "about about cartoon cartoon";
+
+  .logo {
+    grid-area: logo;
+    display: grid;
+    align-items: start;
+    div {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0.2em;
+    }
+  }
+
+  .player {
+    border: 1px solid;
+    grid-area: player;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "cover" "player";
+    background-color: $blue;
+    .cover {
+      img {
+        height: 150px;
+        width: auto;
+      }
+    }
+  }
+
+  .episode-log {
+    grid-area: episode-log;
+    background-color: $tan;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .about {
+    grid-area: about;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .cartoon {
+    grid-area: cartoon;
+
+    display: grid;
+    justify-items: center;
+    img {
+      height: 300px;
+      width: auto;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $green;
+    background-color: $yellow;
+
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    justify: center;
+  }
+}
