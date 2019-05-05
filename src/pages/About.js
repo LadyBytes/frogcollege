@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
+
+
 import Bio from "../components/Bio";
+import { Translate } from "react-localize-redux";
 
 import { Link } from "react-router-dom";
 import frog from "../images/frog.png";
@@ -18,17 +21,11 @@ function About(props) {
       <div>
         {" "}
         <div className={classes.header}> Frog College </div>
-        <div className={classes.logline}> Logline </div>{" "}
+        <div className={classes.logline}> <Translate id={'about.logline'}/></div>
       </div>
       <div>
-        {" "}
-        Summary{" "}
         <div className={classes.content}>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.{" "}
+          <Translate id={'about.summary'}/>
         </div>{" "}
       </div>
       <div className="bios">
@@ -59,7 +56,8 @@ About.propTypes = {
 const styles = theme => ({
   header: {
     fontWeight: "bold",
-    fontSize: "2em"
+    fontSize: "2em",
+    fontFamily: "'Luckiest Guy', cursive",
   },
   logline: {
     fontSize: "1.3em"

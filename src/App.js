@@ -1,24 +1,23 @@
 import React, { Component } from "react";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { LocalizeProvider } from "react-localize-redux";
 
-import Index from "./pages/Index.js";
-import About from "./pages/About.js";
-import EpisodeLog from "./pages/EpisodeLog.js";
+
+import Root from './Root.js'
+import en from "./content/en.json";
 
 
 
 function AppRouter() {
   return (
+  <LocalizeProvider>
     <Router>
       <React.Fragment>
-       
-        <Route path="/" exact component={Index} />
-
-        <Route path="/episodes/" component={EpisodeLog} />
-        <Route path="/about/" component={About} />
+        <Root/>
       </React.Fragment>
     </Router>
+    </LocalizeProvider>
   );
 }
 

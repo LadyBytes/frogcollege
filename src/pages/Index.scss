@@ -4,41 +4,53 @@ $yellow: #fede16;
 $tan: #f5bc55;
 $red: #c60600;
 
+
+
+$accent: 'Luckiest Guy', cursive;;
+
 .Index {
   height: 100vh;
-  padding-top: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin: 3em;
+  
+
+  font-family: $accent;
 
   display: grid;
-  grid-gap: 1rem;
+  // grid-gap: 1rem;
 
   grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-template-rows: 5fr 2.5fr 2.5fr;
+  grid-template-rows: 3fr 2.5fr 2.5fr;
   grid-template-areas:
     "logo logo player player"
     "episode-log episode-log  cartoon cartoon"
     "about about cartoon cartoon";
+
+  a:hover {
+  transform: translateY(2px);
+
+  }
 
   .logo {
     grid-area: logo;
     display: grid;
     align-items: start;
     div {
+      text-align: left;
       font-size: 3em;
       font-weight: bold;
-      margin: 0.2em;
+      
     }
   }
 
   .player {
-    border: 1px solid;
+    // border: 1px solid;
     grid-area: player;
     display: grid;
     justify-items: center;
     align-items: center;
+    justify-self: end;
     grid-template-areas: "cover" "player";
-    background-color: $blue;
+    // background-color: $blue;
     .cover {
       img {
         height: 150px;
@@ -49,23 +61,24 @@ $red: #c60600;
 
   .episode-log {
     grid-area: episode-log;
-    background-color: $tan;
+    // background-color: $tan;
     display: grid;
     align-items: center;
-    justify-items: center;
+    justify-self: start;
   }
   .about {
     grid-area: about;
     display: grid;
     align-items: center;
-    justify-items: center;
+   justify-self: start;
   }
 
   .cartoon {
     grid-area: cartoon;
-
+    justify-self: end;
     display: grid;
     justify-items: center;
+    align-items: center;
     img {
       height: 300px;
       width: auto;
@@ -73,8 +86,8 @@ $red: #c60600;
   }
   a {
     text-decoration: none;
-    color: $green;
-    background-color: $yellow;
+    // color: $green;
+    // background-color: $yellow;
 
     font-weight: bold;
     font-size: 2em;
