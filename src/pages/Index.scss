@@ -48,7 +48,7 @@ $accent: 'Luckiest Guy', cursive;;
     display: grid;
     justify-items: center;
     align-items: center;
-    justify-self: end;
+    // justify-self: end;
     grid-template-areas: "cover" "player";
     // background-color: $blue;
     .cover {
@@ -75,7 +75,7 @@ $accent: 'Luckiest Guy', cursive;;
 
   .cartoon {
     grid-area: cartoon;
-    justify-self: end;
+    // justify-self: end;
     display: grid;
     justify-items: center;
     align-items: center;
