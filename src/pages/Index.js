@@ -4,22 +4,13 @@ import { withStyles } from "@material-ui/core/styles";
 
 import ReactAudioPlayer from "react-audio-player";
 
+import { Translate } from "react-localize-redux";
+
 import { Link } from "react-router-dom";
 import frog from "../images/frog.png";
 // import Grid from "@material-ui/core/Grid";
 
 import "./Index.scss";
-
-const styles = theme => ({
-  root: {
-    flexGrow: 1
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "center",
-    color: theme.palette.text.secondary
-  }
-});
 
 function Index(props) {
   const { classes } = props;
@@ -28,8 +19,10 @@ function Index(props) {
     <div className="Index">
       <div className="logo">
         <Link to="/">
-          <div> FROG </div>
-          <div> COLLEGE</div>
+          <div className={classes.headline}> FROG COLLEGE</div>
+          <div className={classes.logline}>
+            <Translate id={"about.logline"} />
+          </div>
         </Link>{" "}
       </div>
       <div className="player">
@@ -95,5 +88,25 @@ function Index(props) {
 Index.propTypes = {
   classes: PropTypes.object.isRequired
 };
+
+const styles = theme => ({
+  root: {
+    flexGrow: 1
+  },
+  headline: {
+    fontSize: "3em",
+    textAlign: "left"
+  },
+  logline: {
+    textAlign: "left",
+    fontSize: ".8em",
+    fontWeight: 100,
+  },
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: "center",
+    // color: theme.palette.text.secondary
+  }
+});
 
 export default withStyles(styles)(Index);

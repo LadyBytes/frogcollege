@@ -9,6 +9,7 @@ $red: #c60600;
 $accent: 'Luckiest Guy', cursive;;
 
 .Index {
+  color: black !important;
   height: 100vh;
   margin: 3em;
   
@@ -34,12 +35,7 @@ $accent: 'Luckiest Guy', cursive;;
     grid-area: logo;
     display: grid;
     align-items: start;
-    div {
-      text-align: left;
-      font-size: 3em;
-      font-weight: bold;
-      
-    }
+    
   }
 
   .player {
