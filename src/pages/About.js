@@ -6,14 +6,20 @@ import Bio from "../components/Bio";
 import { Translate } from "react-localize-redux";
 import Masonry from "react-masonry-css";
 
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+
 import { Link } from "react-router-dom";
 import frog from "../images/frog.png";
 // import Grid from "@material-ui/core/Grid";
 import Sara from "../images/sara.jpg";
 import Chris from "../images/chris.jpg";
+import Meghan from "../images/meghan.jpg";
 import Dan from "../images/dan.jpg";
 import Mike from "../images/mike.jpg";
 import Kat from "../images/kat.jpg";
+import Lisa from "../images/lisa.jpg";
+import Frog from "../images/frogschool.png";
 import "./About.scss";
 
 var items = [
@@ -35,7 +41,8 @@ var items = [
     name: "Meghan Ames",
     role: "Sound Designer/Amelia",
     bio:
-      "Meghan is a performer and entertainer currently residing in Etampes, France where she studies movement based performance and clown. When she is not entertaining families at the Long Island Children's Museum Theater, she trains in circus arts including tissu, hammock, and acrobalance: completely useless for a podcast. She continues to study, perform, and develop new work in NY and internationally. Keep an eye out for her artistic website which will include details on these new projects."
+      "Meghan is a performer and entertainer currently residing in Etampes, France where she studies movement based performance and clown. When she is not entertaining families at the Long Island Children's Museum Theater, she trains in circus arts including tissu, hammock, and acrobalance: completely useless for a podcast. She continues to study, perform, and develop new work in NY and internationally. Keep an eye out for her artistic website which will include details on these new projects.",
+    photo: Meghan
   },
   {
     name: "Dan Chaffkin",
@@ -52,12 +59,13 @@ var items = [
     bio:
       "Sara Neil is a writer, performer, and grad student in library science and history at Queens College. She performs improv, watches a lot of tv and has a dog named Lucy. You can follow her twitter @sararoseneil for some real gold. Find her other work, somewhere, eventually, one day, when she finishes things and publishes them.",
     photo: Sara
-  },{
+  },
+  {
     name: "Lisa Wagner",
     role: "Tech Support",
     bio:
-      "",
-    
+      "Lisa has a degree in Computer Science and has been working as a Developer and IT Project Manager for 5 years. Her most recent gig is with Memorial Sloan Kettering Cancer Center developing code to support cancer researchers.",
+    photo: Lisa
   }
 ];
 
@@ -78,29 +86,39 @@ function About(props) {
   };
 
   return (
-    <div classes="container" className='About'>
-      <div>
-        {" "}
-        <div className={classes.header}> Frog College </div>
-        <div className={classes.logline}>
-          {" "}
-          <Translate id={"about.logline"} />
+    <React.Fragment>
+      <div className={classes.root}>
+        <AppBar className={classes.nav} position="static">
+          <Toolbar>
+            <Link to="/" className={classes.header}>
+              Frog College
+            </Link>
+            <Link to="/episodes">Episodes</Link>
+          </Toolbar>
+        </AppBar>
+      </div>
+      <div classes="container" className="About">
+        <div className={classes.top}>
+        <div className={classes.texts}>
+          <div className={classes.logline}>
+            {" "}
+            <Translate id={"about.logline"} />
+          </div>
+          <div className={classes.content}>
+            <Translate id={"about.summary"} />
+          </div>
+          </div>
+          <img className={classes.frog} src={Frog} />
         </div>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {bios}
+        </Masonry>
       </div>
-      <div>
-        <div className={classes.content}>
-          <Translate id={"about.summary"} />
-        </div>{" "}
-      </div>
-
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
-      >
-        {bios}
-      </Masonry>
-    </div>
+    </React.Fragment>
   );
 }
 
@@ -109,20 +127,38 @@ About.propTypes = {
 };
 
 const styles = theme => ({
+  root: {
+    flexGrow: 1
+  },
+  nav: {
+    fontFamily: "'Luckiest Guy', cursive",
+    fontSize: "1.2em",
+    // paddingLeft: "1.5em",
+    // paddingRight: "1.5em",
+    backgroundColor: "#3f7396",
+    color: "black"
+  },
   container: {
     fontFamily: "'Raleway'"
   },
   header: {
-    fontWeight: "bold",
+    // flexGrow: 1,
+    paddingTop: ".2em",
+    justifySelf: "center",
     fontSize: "2em",
-    fontFamily: "'Luckiest Guy', cursive"
+    marginRight: "1em"
+  },
+  top:{
+    display: 'grid',
+    gridTemplateColumns: "1fr 1fr",
   },
   logline: {
     fontSize: "1.3em",
-    width: "40%"
+    
   },
-  content: {
-    width: "40%"
+  frog: {
+    justifySelf: "center", 
+    alignSelf: "center", 
   },
   divider: {
     position: "absolute",

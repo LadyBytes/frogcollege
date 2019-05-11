@@ -1,4 +1,6 @@
 $blue: #6b9dbf;
+$lightblue: #93bdd8;
+$darkblue: #3f7396;
 $green: #42e31b;
 $yellow: #fede16;
 $tan: #f5bc55;
@@ -42,5 +44,9 @@ $accent: "Luckiest Guy", cursive;
         /* change div to reference your elements you put in <Masonry> */
         // background: grey;
         margin-bottom: 15px;
+    }
+    .my-masonry-grid_column:nth-of-type(even) > div:first-of-type {
+        // margin-top: 2em;
+        // background-color: $darkblue;
     }
 }
