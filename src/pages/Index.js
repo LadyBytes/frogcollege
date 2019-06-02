@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import { Paper, Fade } from "@material-ui/core";
 
 import ReactAudioPlayer from "react-audio-player";
 
 import { Translate } from "react-localize-redux";
 
 import { Link } from "react-router-dom";
-import frog from "../images/frog.png";
+import frog from "../images/frog.jpg";
 // import Grid from "@material-ui/core/Grid";
 
 import "./Index.scss";
@@ -17,73 +18,42 @@ function Index(props) {
 
   return (
     <div className="Index">
-      <div className="logo">
-        <Link to="/">
-          <div className={classes.headline}> FROG COLLEGE</div>
-          <div className={classes.logline}>
-            <Translate id={"about.logline"} />
-          </div>
-        </Link>{" "}
-      </div>
-      <div className="player">
-        <div className="cover">
-          {" "}
-          <img src={frog} />
-        </div>
-        <div>
-          <ReactAudioPlayer src="" autoPlay controls />{" "}
-        </div>
-      </div>
+      
+        
+          <div className="cartoon">
+            <figure>
+              <img src={frog} />
+              <figcaption> </figcaption>
+            </figure>
+        </div>        
+      
+        <div class='text'>
+        <Fade in={true} timeout={100}>
+            <Paper className={classes.container}>
+              
+                <div className={classes.logline}>
+                  <Translate id={"about.logline"} />
+                </div>
 
-      <div className="episode-log">
-        <Link to="/episodes/">EPISODES</Link>{" "}
-      </div>
-      <div className="about">
-        <div>
-          <Link to="/about/">ABOUT</Link>
+                <div className={classes.summary}>
+                  <Translate id={"about.summary"} />
+                </div>
+            </Paper>
+          </Fade>
         </div>
+        
       </div>
-      <div className="cartoon">
-        {" "}
-        <figure>
-          <img src={frog} />
-          <figcaption> </figcaption>
-        </figure>{" "}
-      </div>
-    </div>
+      
+     
+
+     
+    
   );
 }
-// function Index(props) {
-//   const { classes } = props;
 
-//   return (
-//     <div className={classes.root}>
-//       <Grid container spacing={24}>
-//         <Grid item xs={12}>
-//           <Paper className={classes.paper}>xs=12</Paper>
-//         </Grid>
-//         <Grid item xs={6}>
-//           <Paper className={classes.paper}>xs=6</Paper>
-//         </Grid>
-//         <Grid item xs={6}>
-//           <Paper className={classes.paper}>xs=6</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//       </Grid>
-//     </div>
-//   );
-// }
+
+
+
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired
@@ -94,18 +64,26 @@ const styles = theme => ({
     flexGrow: 1
   },
   headline: {
-    fontSize: "3em",
+    fontSize: "em",
     textAlign: "left"
   },
   logline: {
-    textAlign: "left",
-    fontSize: ".8em",
+    
+    textAlign: "center",
+    fontSize: "1.2em",
     fontWeight: 100,
   },
-  paper: {
+  summary:{
+    fontSize: "1.1em",
+    fontFamily: 'Raleway',
+    textAlign:'justify'
+  },
+ 
+  container: {
     padding: theme.spacing.unit * 2,
     textAlign: "center",
-    // color: theme.palette.text.secondary
+    backgroundColor: "#FDF035",
+    width: "60vw"
   }
 });
 

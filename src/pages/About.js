@@ -87,29 +87,12 @@ function About(props) {
 
   return (
     <React.Fragment>
-      <div className={classes.root}>
-        <AppBar className={classes.nav} position="static">
-          <Toolbar>
-            <Link to="/" className={classes.header}>
-              Frog College
-            </Link>
-            <Link to="/episodes">Episodes</Link>
-          </Toolbar>
-        </AppBar>
-      </div>
+     
       <div classes="container" className="About">
-        <div className={classes.top}>
-        <div className={classes.texts}>
-          <div className={classes.logline}>
-            {" "}
-            <Translate id={"about.logline"} />
-          </div>
-          <div className={classes.content}>
-            <Translate id={"about.summary"} />
-          </div>
-          </div>
-          <img className={classes.frog} src={Frog} />
+        <div className={classes.header}>
+          <p>About</p>
         </div>
+        
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
@@ -118,6 +101,7 @@ function About(props) {
           {bios}
         </Masonry>
       </div>
+      
     </React.Fragment>
   );
 }
@@ -130,24 +114,27 @@ const styles = theme => ({
   root: {
     flexGrow: 1
   },
-  nav: {
+  header: {
     fontFamily: "'Luckiest Guy', cursive",
-    fontSize: "1.2em",
+    // fontSize: "1.2em",
+    justifySelf: "center",
+    fontSize: "3em",
+
     // paddingLeft: "1.5em",
     // paddingRight: "1.5em",
-    backgroundColor: "#3f7396",
+    // backgroundColor: "#3f7396",
     color: "black"
   },
   container: {
     fontFamily: "'Raleway'"
   },
-  header: {
-    // flexGrow: 1,
-    paddingTop: ".2em",
-    justifySelf: "center",
-    fontSize: "2em",
-    marginRight: "1em"
-  },
+  // header: {
+  //   // flexGrow: 1,
+  //   paddingTop: ".2em",
+  //   justifySelf: "center",
+  //   fontSize: "2em",
+  //   marginRight: "1em"
+  // },
   top:{
     display: 'grid',
     gridTemplateColumns: "1fr 1fr",

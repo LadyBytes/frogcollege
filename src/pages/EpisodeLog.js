@@ -6,27 +6,42 @@ import { withStyles } from "@material-ui/core/styles";
 
 import './EpisodeLog.scss'
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1  },paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "center",
-    // color: theme.palette.text.secondary
-  }
-});
+
 
 function EpisodeLog(props) {
   const { classes } = props;
 
   return (
     <div className="EpisodeLog">
-      <div className="player"> LOGO </div>
-      <div className="description"> PLAYER </div>
-      
-      
+       
+        <div className={classes.header}>
+          <p> Episodes - Placeholder</p>
+        </div>
+     
+
+    
     </div>
   );
 }
+
+
+const styles = theme => ({
+  root: {
+    flexGrow: 1
+  },
+  header: {
+    fontFamily: "'Luckiest Guy', cursive",
+    // fontSize: "1.2em",
+    justifySelf: "center",
+    textAlign:'center',
+    fontSize: "3em",
+    color: "black"
+  },
+  container: {
+    fontFamily: "'Raleway'"
+  },
+ 
+});
 
 EpisodeLog.propTypes = {
   classes: PropTypes.object.isRequired

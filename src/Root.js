@@ -15,13 +15,23 @@ import EpisodeLog from "./pages/EpisodeLog.js";
 function Pages() {
   return (
     <React.Fragment>
-      <Route path="/" exact component={Index} />
-      <Route path="/episodes/" component={EpisodeLog} />
-      <Route path="/about/" component={About} />
+      <Index/>
+      <EpisodeLog/>
+      <About/>
     </React.Fragment>
 
   );
 }
+// function Pages() {
+//   return (
+//     <React.Fragment>
+//       <Route path="/" exact component={Index} />
+//       <Route path="/episodes/" component={EpisodeLog} />
+//       <Route path="/about/" component={About} />
+//     </React.Fragment>
+
+//   );
+// }
 
 class App extends Component {
   constructor(props) {

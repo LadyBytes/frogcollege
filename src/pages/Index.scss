@@ -1,6 +1,7 @@
 $blue: #5c96bc;
 $green: #42e31b;
-$yellow: #fede16;
+$yellow: #FDF035;
+// $yellow: #fede16;
 $tan: #f5bc55;
 $red: #c60600;
 
@@ -10,22 +11,27 @@ $accent: 'Luckiest Guy', cursive;;
 
 .Index {
   color: black !important;
-  height: 100vh;
+  // height: 100vh;
   margin: 3em;
   
 
   font-family: $accent;
 
-  display: grid;
+  // display: grid;
   // grid-gap: 1rem;
 
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-template-rows: 3fr 2.5fr 2.5fr;
+  // grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
   grid-template-areas:
-    "logo logo player player"
-    "episode-log episode-log  cartoon cartoon"
-    "about about cartoon cartoon";
-
+    "cartoon " "text";
+  align-items: center;
+  justify-items: center;
+  .text{
+    grid-area: text;
+     display: grid;
+    justify-items: center;
+    align-items: center;
+  }
   
 
   .logo {
@@ -35,30 +41,30 @@ $accent: 'Luckiest Guy', cursive;;
     
   }
 
-  .player {
-    // border: 1px solid;
-    grid-area: player;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    // justify-self: end;
-    grid-template-areas: "cover" "player";
-    // background-color: $blue;
-    .cover {
-      img {
-        height: 150px;
-        width: auto;
-      }
-    }
-  }
+  // .player {
+  //   // border: 1px solid;
+  //   grid-area: player;
+  //   display: grid;
+  //   justify-items: center;
+  //   align-items: center;
+  //   // justify-self: end;
+  //   grid-template-areas: "cover" "player";
+  //   // background-color: $blue;
+  //   .cover {
+  //     img {
+  //       height: 150px;
+  //       width: auto;
+  //     }
+  //   }
+  // }
 
-  .episode-log {
-    grid-area: episode-log;
-    // background-color: $tan;
-    display: grid;
-    align-items: center;
-    justify-self: start;
-  }
+  // .episode-log {
+  //   grid-area: episode-log;
+  //   // background-color: $tan;
+  //   display: grid;
+  //   align-items: center;
+  //   justify-self: start;
+  // }
   .about {
     grid-area: about;
     display: grid;
@@ -68,12 +74,15 @@ $accent: 'Luckiest Guy', cursive;;
 
   .cartoon {
     grid-area: cartoon;
-    // justify-self: end;
+    height: 100vh;
+    // position: absolute;
+    // z-index: -5;
+    // margin-bottom: -2em;
     display: grid;
     justify-items: center;
     align-items: center;
     img {
-      height: 300px;
+      height: 600px;
       width: auto;
     }
   }
