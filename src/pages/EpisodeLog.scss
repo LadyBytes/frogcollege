@@ -9,6 +9,7 @@ $red: #c60600;
   padding-top: 4em;
   height: 400px;
   display: grid;
+  // font-size: 4em;
   align-items: center;
   justify-items:center;
   // padding-top: 1em;
@@ -35,7 +36,7 @@ $red: #c60600;
   // }
 
   $wobbleTime: 0.5s;
-  $fontSize: 1em;
+  $fontSize: 2.8em;
 
   #countdown {
     align-self: center;
