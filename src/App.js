@@ -8,7 +8,6 @@ import en from "./content/en.json";
 import $ from "jquery";
 
 import anime from "animejs";
-import FlipClock from "flipclock";
 function AppRouter() {
   return (
     <LocalizeProvider>
