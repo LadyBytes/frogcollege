@@ -1,19 +1,16 @@
 $blue: #5c96bc;
 $green: #42e31b;
-$yellow: #FDF035;
+$yellow: #fdf035;
 // $yellow: #fede16;
 $tan: #f5bc55;
 $red: #c60600;
 
-
-
-$accent: 'Luckiest Guy', cursive;;
+$accent: "Luckiest Guy", cursive;
 
 .Index {
   color: black !important;
   // height: 100vh;
   margin: 3em;
-  
 
   font-family: $accent;
 
@@ -22,23 +19,20 @@ $accent: 'Luckiest Guy', cursive;;
 
   // grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
-  grid-template-areas:
-    "cartoon " "text";
+  grid-template-areas: "cartoon " "text";
   align-items: center;
   justify-items: center;
-  .text{
+  .text {
     grid-area: text;
-     display: grid;
+    display: grid;
     justify-items: center;
     align-items: center;
   }
-  
 
   .logo {
     grid-area: logo;
     display: grid;
     align-items: start;
-    
   }
 
   // .player {
@@ -69,7 +63,7 @@ $accent: 'Luckiest Guy', cursive;;
     grid-area: about;
     display: grid;
     align-items: center;
-   justify-self: start;
+    justify-self: start;
   }
 
   .cartoon {
@@ -82,7 +76,7 @@ $accent: 'Luckiest Guy', cursive;;
     justify-items: center;
     align-items: center;
     img {
-      height: 600px;
+      height: 800px;
       width: auto;
     }
   }
@@ -95,5 +89,29 @@ $accent: 'Luckiest Guy', cursive;;
     font-size: 2em;
     text-align: center;
     justify: center;
+  }
+  .ml6 {
+    color: #4aa35e;
+    position: absolute;
+    top: 1em;
+    left: 3em;
+    transform: rotate(-20deg);
+    // font-size: 1.5em;
+    font-weight: 300;
+    font-size: 5em;
+  }
+
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.3em;
+    padding-right: 0.05em;
+    padding-bottom: 0em;
+    overflow: hidden;
+  }
+
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
   }
 }
