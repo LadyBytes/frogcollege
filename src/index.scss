@@ -29,5 +29,403 @@ a {
     }
 }
 
+$blue: #5c96bc;
+$green: #42e31b;
+$yellow: #fdf035;
+// $yellow: #fede16;
+$tan: #f5bc55;
+$red: #c60600;
 
+$accent: "Luckiest Guy", cursive;
 
+.Index {
+    color: black !important;
+    // height: 100vh;
+    margin: 3em;
+
+    font-family: $accent;
+
+    // display: grid;
+    // grid-gap: 1rem;
+
+    // grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "cartoon " "text";
+    align-items: center;
+    justify-items: center;
+    .text {
+        grid-area: text;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 2em;
+
+        // font-size: 1.2em;
+    }
+
+    .logo {
+        grid-area: logo;
+        display: grid;
+        align-items: start;
+    }
+
+    .about {
+        grid-area: about;
+        display: grid;
+        align-items: center;
+        justify-self: start;
+    }
+
+    .cartoon {
+        grid-area: cartoon;
+        height: 100vh;
+        // position: absolute;
+        // z-index: -5;
+        // margin-bottom: -2em;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        img {
+            height: 800px;
+            width: auto;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        // color: $green;
+        // background-color: $yellow;
+
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        justify: center;
+    }
+    .ml6 {
+        color: #4aa35e;
+        text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 1em;
+        left: 3em;
+        transform: rotate(-20deg);
+        // font-size: 1.5em;
+        font-weight: 300;
+        font-size: 5em;
+    }
+
+    .ml6 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.3em;
+        padding-right: 0.05em;
+        padding-bottom: 0em;
+        overflow: hidden;
+    }
+
+    .ml6 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .Index {
+        margin: 0;
+        .cartoon {
+            figure {
+                margin: 0 auto;
+            }
+            img {
+                height: 300px;
+                margin: 0;
+            }
+        }
+
+        .ml6 {
+            text-align: center;
+
+            top: 20%;
+            left: 0;
+            transform: rotate(0deg);
+            font-size: 3em;
+            margin: 0 auto;
+            width: 100vw;
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .Index {
+        margin: 0;
+        .cartoon {
+            figure {
+                margin: 0 auto;
+            }
+            img {
+                height: 400px;
+                margin: 0;
+            }
+        }
+
+        .ml6 {
+            text-align: center;
+
+            top: 20%;
+            left: 0;
+            transform: rotate(0deg);
+            font-size: 10em;
+            margin: 0 auto;
+            width: 100vw;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Index {
+        margin: 0;
+        .cartoon {
+            figure {
+                margin: 0 auto;
+            }
+            img {
+                height: 600px;
+                margin: 0;
+            }
+        }
+
+        .ml6 {
+            text-align: center;
+            top: 10%;
+            left: 0;
+            transform: rotate(0deg);
+            font-size: 5em;
+            margin: 0 auto;
+            width: 100vw;
+        }
+    }
+}
+
+$blue: #5c96bc;
+$green: #42e31b;
+$yellow: #fede16;
+$tan: #f5bc55;
+$red: #c60600;
+
+.EpisodeLog {
+    background-color: $red;
+    padding-top: 4em;
+    height: 100vh;
+    display: grid;
+    // font-size: 4em;
+    align-items: center;
+    justify-items: center;
+    // padding-top: 1em;
+    // margin-left: 2em;
+    // margin-right: 2em;
+
+    // display: grid;
+    // grid-gap: 1rem;
+    // grid-template-columns: 1fr 1fr 1fr ;
+    // grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-areas:
+    //   "episode-player episode-description episode-description"
+    //   "episode-description episode-description episode-player"
+    //   "episode-player episode-description episode-description";
+
+    // .episode-player {
+    //   grid-area: episode-player;
+    //   background-color: $green;
+    // }
+
+    // .episode-description {
+    //   grid-area: episode-description;
+    //   background-color: $blue;
+    // }
+
+    $wobbleTime: 0.5s;
+    $fontSize: 2.8em;
+
+    #countdown {
+        align-self: center;
+        color: $yellow;
+        text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
+        font-size: 2em;
+        .letter {
+            font-size: 0.9em;
+        }
+    }
+
+    .wobblyText {
+        line-height: 1;
+        color: $yellow;
+        // font-weight: bold;
+        font-size: $fontSize;
+        margin: 0;
+        letter-spacing: +0.1em;
+        text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
+        span {
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: all $wobbleTime;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        .wobblyText {
+            font-size: 1em;
+        }
+        #countdown {
+            font-size: 0.8em;
+            .letter {
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        .wobblyText {
+            font-size: 1em;
+        }
+        #countdown {
+            font-size: 0.8em;
+            .letter {
+                font-size: 0.7em;
+            }
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .wobblyText {
+            font-size: 1em;
+        }
+        #countdown {
+            font-size: 0.8em;
+            .letter {
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        .wobblyText {
+            font-size: 2em;
+        }
+        #countdown {
+            font-size: 1.2em;
+            .letter {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    //CSS
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    //CSS
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 5px;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+$blue: #6b9dbf;
+$lightblue: #93bdd8;
+$darkblue: #3f7396;
+$green: #42e31b;
+$yellow: #fdf035;
+// $yellow: #fede16;
+$tan: #f5bc55;
+$red: #c60600;
+
+$accent: "Luckiest Guy", cursive;
+
+.About {
+    min-height: 100vh;
+    display: grid;
+    grid-gap: rem;
+    font-family: "Raleway";
+    // height: 100vh;
+    padding: 3em;
+    background-color: $blue;
+    overflow: auto;
+
+    display: grid;
+    grid-template-areas: "header" "summary" "bios";
+
+    // .bios {
+    //     display: grid;
+    //     grid-gap: 1rem;
+
+    //     display: grid;
+    //     grid-template-areas: "p1 p2 p3 p4";
+    // }
+    .my-masonry-grid {
+        display: -webkit-box; /* Not needed if autoprefixing */
+        display: -ms-flexbox; /* Not needed if autoprefixing */
+        display: flex;
+        margin-left: -20px; /* gutter size offset */
+        width: auto;
+    }
+    .my-masonry-grid_column {
+        padding-left: 20px; /* gutter size */
+        background-clip: padding-box;
+    }
+
+    // Style your items
+    .my-masonry-grid_column > div {
+        /* change div to reference your elements you put in <Masonry> */
+        // background: grey;
+        margin-bottom: 15px;
+    }
+    .my-masonry-grid_column:nth-of-type(even) > div:first-of-type {
+        // margin-top: 2em;
+        // background-color: $darkblue;
+    }
+}

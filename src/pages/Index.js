@@ -76,7 +76,7 @@ const styles = theme => ({
   },
 
   container: {
-    padding: theme.spacing.unit * 2,
+    padding: theme.spacing.unit * 4,
     textAlign: "center",
     backgroundColor: "#FDF035",
     width: "60vw"
