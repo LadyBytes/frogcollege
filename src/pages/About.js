@@ -18,9 +18,10 @@ import Meghan from "../images/meghan.jpg";
 import Dan from "../images/dan.jpg";
 import Mike from "../images/mike.jpg";
 import Kat from "../images/kat.jpg";
+import James from "../images/james.jpg";
+import Sam from "../images/sam.jpg";
 import Lisa from "../images/lisa.jpg";
 import Frog from "../images/frogschool.png";
-import "./About.scss";
 
 var items = [
   {
@@ -51,15 +52,36 @@ var items = [
       "Dan Chaffkin is a comedy and math person. He likes doing stand up and improv and making videos. He has been told that he would have a great singing voice if he took some lessons. Dan is a black sash in Shoalin Kung-Fu, and he is developing a fundamental theory of comedy using first-order predicate calculus. He has also been known to make himself laugh for twenty minutes by spelling out 'fart' three times in a game of Bananagrams.",
     photo: Dan
   },
-  { name: "Sam Kellman", role: "Professor", bio: "" },
-  { name: "Mike Flandrau", role: "Scientist", bio: "", photo: Mike },
+  {
+    name: "Sam Kellman",
+    role: "Professor",
+    bio:
+      "Sam Kellman is an actor and writer from Syracuse, New York.  He recently graduated from The Neighborhood Playhouse theater conservatory and went on to star in Riding Lessons with The New Jersey Reparatory Company. He would like to thank Katherine Gorham for creating this amazing podcast and casting him!",
+      photo: Sam
+  },
+  {
+    name: "Mike Flandrau",
+    role: "Scientist",
+    bio:
+      "Mike Flandrau is 5'9\" and 159lbs. That translates into 1.75 meters and 72.3 kilograms. He has brown hair and green eyes and a moderate athletic build. You can find him where he is and you won't find him where he isn't. Time is fleeting, so try to enjoy the moment. ",
+    photo: Mike
+  },
+
   {
     name: "Sara Neil",
-    role: "Frog Mom",
+    role: "Frog Mom/Social Media Coordinator",
     bio:
       "Sara Neil is a writer, performer, and grad student in library science and history at Queens College. She performs improv, watches a lot of tv and has a dog named Lucy. You can follow her twitter @sararoseneil for some real gold. Find her other work, somewhere, eventually, one day, when she finishes things and publishes them.",
     photo: Sara
   },
+  {
+    name: "James Harvey",
+    role: "Music",
+    bio:
+      "James Harvey is a musician, comedian and musical theatre writer. His debut comedy special, The Bald-Faced Truth, is  currently available on Prime Video, Spotify and Itunes. James wrote the book, music and lyrics for The Crack in the Ceiling, which was presented at the New York Musical Theatre Festival and the New York International Fringe Festival, where it received the award for Overall Excellence in a Musical. He co-hosts The Second Cousins Show, a monthly variety show, and he can be heard every week on What Makes U Sing with Larry Owens, a Forever Dog podcast. ",
+    photo: James
+  },
+
   {
     name: "Lisa Wagner",
     role: "Tech Support",
@@ -87,12 +109,11 @@ function About(props) {
 
   return (
     <React.Fragment>
-     
       <div classes="container" className="About">
         <div className={classes.header}>
           <p>About</p>
         </div>
-        
+
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
@@ -101,7 +122,6 @@ function About(props) {
           {bios}
         </Masonry>
       </div>
-      
     </React.Fragment>
   );
 }
@@ -115,7 +135,7 @@ const styles = theme => ({
     flexGrow: 1
   },
   header: {
-    fontFamily: "'Luckiest Guy', cursive",
+    // fontFamily: "'Luckiest Guy', cursive",
     // fontSize: "1.2em",
     justifySelf: "center",
     fontSize: "3em",
@@ -126,7 +146,7 @@ const styles = theme => ({
     color: "black"
   },
   container: {
-    fontFamily: "'Raleway'"
+    // fontFamily: "'Raleway'"
   },
   // header: {
   //   // flexGrow: 1,
@@ -135,17 +155,16 @@ const styles = theme => ({
   //   fontSize: "2em",
   //   marginRight: "1em"
   // },
-  top:{
-    display: 'grid',
-    gridTemplateColumns: "1fr 1fr",
+  top: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr"
   },
   logline: {
-    fontSize: "1.3em",
-    
+    fontSize: "1.3em"
   },
   frog: {
-    justifySelf: "center", 
-    alignSelf: "center", 
+    justifySelf: "center",
+    alignSelf: "center"
   },
   divider: {
     position: "absolute",

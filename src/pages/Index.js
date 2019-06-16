@@ -71,7 +71,7 @@ const styles = theme => ({
   },
   summary: {
     fontSize: "1.1em",
-    fontFamily: "Raleway",
+    fontFamily: "Josefin Sans",
     textAlign: "justify"
   },
 

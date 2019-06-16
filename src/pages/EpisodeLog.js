@@ -65,7 +65,7 @@ const styles = theme => ({
     flexGrow: 1
   },
   header: {
-    fontFamily: "'Luckiest Guy', cursive",
+    
     // fontSize: "1.2em",
     justifySelf: "center",
     textAlign: "center",
@@ -73,7 +73,7 @@ const styles = theme => ({
     color: "black"
   },
   container: {
-    fontFamily: "'Raleway'"
+    // fontFamily: "'Raleway'"
   }
 });
 

@@ -12,12 +12,13 @@ body {
     height: 100vh;
     overflow-x: hidden;
     // overflow-y: hidden;
+    font-family: 'Josefin Sans';
 
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    //     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    //     "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -37,6 +38,7 @@ $tan: #f5bc55;
 $red: #c60600;
 
 $accent: "Luckiest Guy", cursive;
+$accent: "Concert one";
 
 .Index {
     color: black !important;
@@ -245,6 +247,7 @@ $red: #c60600;
     $fontSize: 2.8em;
 
     #countdown {
+        font-family: $accent;
         align-self: center;
         color: $yellow;
         text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
@@ -257,7 +260,7 @@ $red: #c60600;
     .wobblyText {
         line-height: 1;
         color: $yellow;
-        // font-weight: bold;
+        font-family: $accent;
         font-size: $fontSize;
         margin: 0;
         letter-spacing: +0.1em;
@@ -384,13 +387,13 @@ $yellow: #fdf035;
 $tan: #f5bc55;
 $red: #c60600;
 
-$accent: "Luckiest Guy", cursive;
+// $accent: "Luckiest Guy", cursive;
 
 .About {
     min-height: 100vh;
     display: grid;
     grid-gap: rem;
-    font-family: "Raleway";
+    font-family: $accent;
     // height: 100vh;
     padding: 3em;
     background-color: $blue;
@@ -407,6 +410,7 @@ $accent: "Luckiest Guy", cursive;
     //     grid-template-areas: "p1 p2 p3 p4";
     // }
     .my-masonry-grid {
+        font-family: "Josefin Sans";
         display: -webkit-box; /* Not needed if autoprefixing */
         display: -ms-flexbox; /* Not needed if autoprefixing */
         display: flex;
