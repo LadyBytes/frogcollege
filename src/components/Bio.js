@@ -25,7 +25,7 @@ class Bio extends React.Component {
                 </div>
             </Fade>
         ) : (
-            <Fade in={this.state.hovered} timeout={delay}>
+            <Fade in={true} timeout={delay}>
                 <Paper className={classes.container}>
                     <div className={classes.headshot}>
                         <img className={classes.headshot} src={photo} />
