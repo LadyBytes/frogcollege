@@ -20,6 +20,7 @@ import Mike from "../images/mike.jpg";
 import Kat from "../images/kat.jpg";
 import James from "../images/james.jpg";
 import Sam from "../images/sam.jpg";
+import Kevin from "../images/kevin.jpg";
 import Lisa from "../images/lisa.jpg";
 import Frog from "../images/frogschool.png";
 
@@ -73,6 +74,14 @@ var items = [
     bio:
       "Sara Neil is a writer, performer, and grad student in library science and history at Queens College. She performs improv, watches a lot of tv and has a dog named Lucy. You can follow her twitter @sararoseneil for some real gold. Find her other work, somewhere, eventually, one day, when she finishes things and publishes them.",
     photo: Sara
+  },
+
+  {
+    name: "Kevin Parada",
+    role: "Editor",
+    bio:
+      "Kevin Parada's love for film dates back to his earliest memories and remains strong to this day.  He aspires to be a writer, director, producer and editor, and hopes to learn as much as he can with every other aspect in film. After studying Applied Mathematics and Statistics at Stony Brook University, he hopes to pursue a creative bridge between math and film for future projects.",
+    photo: Kevin
   },
   {
     name: "James Harvey",

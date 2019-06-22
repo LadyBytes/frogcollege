@@ -8,16 +8,12 @@ import ReactAudioPlayer from "react-audio-player";
 import { Translate } from "react-localize-redux";
 
 import { Link } from "react-router-dom";
-import frog from "../images/frog.jpg";
+import frog from "../images/frog.png";
 // import Grid from "@material-ui/core/Grid";
-
-
 
 import "./Index.scss";
 
 function Index(props) {
-
-
   const { classes } = props;
 
   return (
@@ -42,11 +38,12 @@ function Index(props) {
           </Paper>
         </Fade>
       </div>
-      <h1 class="ml6" >
-        <span class="text-wrapper" >
+      <h1 class="ml6">
+        <span class="text-wrapper">
           <span class="letters">coming soon!</span>
         </span>
       </h1>
+      <div class="buttons" />
     </div>
   );
 }
@@ -59,7 +56,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1
   },
-  
+
   headline: {
     fontSize: "em",
     textAlign: "left"
