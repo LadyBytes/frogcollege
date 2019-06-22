@@ -120,7 +120,8 @@ $accent: "Concert one";
         display: inline-block;
         padding-top: 0.3em;
         padding-right: 0.05em;
-        padding-bottom: 0em;
+        padding-bottom: 0.1em;
+        z-index: 1;
         overflow: hidden;
     }
 
