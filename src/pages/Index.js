@@ -64,7 +64,8 @@ const styles = theme => ({
   logline: {
     textAlign: "center",
     fontSize: "1.2em",
-    fontWeight: 100
+    fontWeight: 100,
+    paddingBottom: '.4em',
   },
   summary: {
     fontSize: "1.1em",
