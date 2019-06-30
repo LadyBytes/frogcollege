@@ -158,6 +158,7 @@ const styles = theme => ({
     // fontFamily: "'Luckiest Guy', cursive",
     // fontSize: "1.2em",
     justifySelf: "center",
+    fontWeight: 900,
     fontSize: "3em",
 
     // paddingLeft: "1.5em",
@@ -197,10 +198,7 @@ const styles = theme => ({
 
     // color: theme.palette.text.secondary
   },
-  img: {
-    width: "auto",
-    margin: "0 auto"
-  }
+  
 });
 
 export default withStyles(styles)(About);

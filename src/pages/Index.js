@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebook,
-  faSoundcloud
+  faSoundcloud,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 import { Translate } from "react-localize-redux";
@@ -52,6 +53,9 @@ function Index(props) {
         <a target="_blank" href="https://www.instagram.com/frogcollege/">
           <FontAwesomeIcon size="1x" icon={faInstagram} />
         </a>
+        <a target="_blank" href="https://www.twitter.com/frogcollege/">
+          <FontAwesomeIcon size="1x" icon={faTwitter} />
+        </a>
       </div>
     </div>
   );
@@ -79,14 +83,15 @@ const styles = theme => ({
     textAlign: "left"
   },
   logline: {
+
     textAlign: "center",
     fontSize: "1.2em",
-    fontWeight: 100,
+    fontWeight: 900,
     paddingBottom: ".4em"
   },
   summary: {
     fontSize: "1.1em",
-    fontFamily: "Josefin Sans",
+    // fontFamily: "Josefin Sans",
     textAlign: "justify"
   },
 

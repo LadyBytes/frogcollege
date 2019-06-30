@@ -12,8 +12,8 @@ body {
     height: 100vh;
     overflow-x: hidden;
     // overflow-y: hidden;
-    font-family: "Josefin Sans";
-
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -37,8 +37,8 @@ $yellow: #ff0;
 $tan: #f5bc55;
 $red: #c60600;
 
-$accent: "Luckiest Guy", cursive;
-$accent: "Concert one";
+$accent: "Alegreya Sans", sans-serif;
+// $accent: "Concert one";
 
 .Index {
     color: black !important;
@@ -66,6 +66,7 @@ $accent: "Concert one";
     }
 
     .logo {
+        font-weight: 900;
         grid-area: logo;
         display: grid;
         align-items: start;
@@ -116,6 +117,7 @@ $accent: "Concert one";
     }
 
     .ml6 .text-wrapper {
+        font-weight: 900;
         position: relative;
         display: inline-block;
         padding-top: 0.3em;
@@ -133,19 +135,20 @@ $accent: "Concert one";
     .buttons {
         position: fixed;
         top: 10%;
-        left: 90%;
+        left: 80%;
         color: $green;
         text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
 
         a {
             background: $yellow;
-
+            margin-right: 0.6em;
             border-radius: 50%;
             text-align: center;
 
             vertical-align: middle;
-            padding: 10px;
-            padding-left: 14px;
+            padding-top: 10px;
+            padding-bottom: 7px;
+            padding-left: 13px;
             padding-right: 14px;
 
             color: #4aa35e;
@@ -154,6 +157,12 @@ $accent: "Concert one";
                 color: darkgreen;
             }
             //     text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
+        }
+    }
+    @media (min-width: 281px) and (max-width: 767px) {
+        .buttons {
+            left: 50%;
+            margin: 0 auto;
         }
     }
 }
@@ -202,7 +211,7 @@ $accent: "Concert one";
             top: 20%;
             left: 0;
             transform: rotate(0deg);
-            font-size: 10em;
+            font-size: 3em;
             margin: 0 auto;
             width: 100vw;
         }
@@ -284,6 +293,7 @@ $red: #c60600;
         color: $yellow;
         text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
         font-size: 1.8em;
+        font-weight: 900;
 
         .letter {
             font-size: 0.9em;
@@ -294,6 +304,7 @@ $red: #c60600;
         line-height: 1;
         color: $yellow;
         font-family: $accent;
+        font-weight: 900;
         font-size: $fontSize;
         margin: 0;
         padding-left: 1em;
@@ -398,7 +409,7 @@ $red: #c60600;
 
 @media (min-width: 481px) and (max-width: 767px) {
     body {
-        font-size: 5px;
+        // font-size: 5px;
     }
 }
 
@@ -446,7 +457,7 @@ $red: #c60600;
     //     grid-template-areas: "p1 p2 p3 p4";
     // }
     .my-masonry-grid {
-        font-family: "Josefin Sans";
+        // font-family: "Josefin Sans";
         display: -webkit-box; /* Not needed if autoprefixing */
         display: -ms-flexbox; /* Not needed if autoprefixing */
         display: flex;
@@ -467,5 +478,16 @@ $red: #c60600;
     .my-masonry-grid_column:nth-of-type(even) > div:first-of-type {
         // margin-top: 2em;
         // background-color: $darkblue;
+    }
+
+    img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 320px) and (max-width: 1000px) {
+        img {
+            width: 100%;
+        }
     }
 }

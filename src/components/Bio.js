@@ -73,10 +73,12 @@ const styles = theme => ({
     },
     text: {
         fontSize: "1em",
-        paddingBottom: "1em"
+        paddingBottom: "1em",
+        fontWeight: "900"
     },
     bio: {
-        textAlign: "justify"
+        textAlign: "right",
+        fontWeight: "400"
     },
     paper: {
         padding: theme.spacing.unit * 2,
