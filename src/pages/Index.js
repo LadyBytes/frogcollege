@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import { Paper, Fade } from "@material-ui/core";
 
-import ReactAudioPlayer from "react-audio-player";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faFacebook,
+  faSoundcloud
+} from "@fortawesome/free-brands-svg-icons";
 
 import { Translate } from "react-localize-redux";
 
@@ -43,10 +48,22 @@ function Index(props) {
           <span class="letters">coming soon!</span>
         </span>
       </h1>
-      <div class="buttons" />
+      <div class="buttons">
+        <a target="_blank" href="https://www.instagram.com/frogcollege/">
+          <FontAwesomeIcon size="1x" icon={faInstagram} />
+        </a>
+      </div>
     </div>
   );
 }
+
+//<a target="_blank" href="https://www.facebook.com/SearchPartyHunts/">
+// <FontAwesomeIcon size="1x" icon={faFacebook} />
+// </a>
+
+//<a target="_blank" href="https://www.instagram.com/frogcollege/">
+// <FontAwesomeIcon size="2x" icon={faSoundcloud} />
+// </a>
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired
@@ -65,7 +82,7 @@ const styles = theme => ({
     textAlign: "center",
     fontSize: "1.2em",
     fontWeight: 100,
-    paddingBottom: '.4em',
+    paddingBottom: ".4em"
   },
   summary: {
     fontSize: "1.1em",

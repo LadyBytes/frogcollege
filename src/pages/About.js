@@ -22,7 +22,9 @@ import James from "../images/james.jpg";
 import Sam from "../images/sam.jpg";
 import Kevin from "../images/kevin.jpg";
 import Lisa from "../images/lisa.jpg";
+import Jenn from "../images/jenn.jpg";
 import Frog from "../images/frogschool.png";
+import Drunk from "../images/drunk.png";
 
 var items = [
   {
@@ -58,7 +60,7 @@ var items = [
     role: "Professor",
     bio:
       "Sam Kellman is an actor and writer from Syracuse, New York.  He recently graduated from The Neighborhood Playhouse theater conservatory and went on to star in Riding Lessons with The New Jersey Reparatory Company. He would like to thank Katherine Gorham for creating this amazing podcast and casting him!",
-      photo: Sam
+    photo: Sam
   },
   {
     name: "Mike Flandrau",
@@ -89,6 +91,14 @@ var items = [
     bio:
       "James Harvey is a musician, comedian and musical theatre writer. His debut comedy special, The Bald-Faced Truth, is  currently available on Prime Video, Spotify and Itunes. James wrote the book, music and lyrics for The Crack in the Ceiling, which was presented at the New York Musical Theatre Festival and the New York International Fringe Festival, where it received the award for Overall Excellence in a Musical. He co-hosts The Second Cousins Show, a monthly variety show, and he can be heard every week on What Makes U Sing with Larry Owens, a Forever Dog podcast. ",
     photo: James
+  },
+
+  {
+    name: "Jenn Hooks",
+    role: "Artist",
+    bio:
+      "Meet Jenn Hooks! The artist behind our characters. While she isn't changing diapers for her two year old in real life, she is frantically scribbling in her sketchbook and has a small business as a hair colorist. A twist of creativity is everywhere in her life and she is thrilled to be creating alongside such talented writers, actors, editors, and well, Frogs!   ",
+    photo: Jenn
   },
 
   {
@@ -130,6 +140,7 @@ function About(props) {
         >
           {bios}
         </Masonry>
+        <img className={classes.img} src={Drunk} />
       </div>
     </React.Fragment>
   );
@@ -185,6 +196,10 @@ const styles = theme => ({
     textAlign: "center"
 
     // color: theme.palette.text.secondary
+  },
+  img: {
+    width: "auto",
+    margin: "0 auto"
   }
 });
 

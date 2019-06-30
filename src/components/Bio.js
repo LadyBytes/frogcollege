@@ -72,7 +72,8 @@ const styles = theme => ({
         }
     },
     text: {
-        fontSize: "1em"
+        fontSize: "1em",
+        paddingBottom: "1em"
     },
     bio: {
         textAlign: "justify"
