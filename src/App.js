@@ -49,19 +49,7 @@ class App extends Component {
     // });
 
     $(document).ready(function() {
-      // var el = document.getElementById("clock");
-
-      // const clock = new FlipClock(el, new Date(), {
-      //   clockFace: "DailyCounter",
-      //   countdown: true,
-      //   showSeconds: false
-      // });
-      // console.log(clock)
-      //       const clock2 = new FlipClock(3600 * 24 * 3, {
-      //         clockFace: "DailyCounter",
-      //         countdown: true,
-      //         showSeconds: false
-      //       });
+     
 
       var FLAG_wobblyness = 10; //range of movement from centre
       var FLAG_intervalRate = 150;

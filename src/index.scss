@@ -263,70 +263,62 @@ $red: #c60600;
     justify-items: center;
     // padding-top: 1em;
     // margin-left: 2em;
-    // margin-right: 2em;
 
-    // display: grid;
-    // grid-gap: 1rem;
-    // grid-template-columns: 1fr 1fr 1fr ;
-    // grid-template-rows: 1fr 1fr 1fr;
-    // grid-template-areas:
-    //   "episode-player episode-description episode-description"
-    //   "episode-description episode-description episode-player"
-    //   "episode-player episode-description episode-description";
-
-    // .episode-player {
-    //   grid-area: episode-player;
-    //   background-color: $green;
-    // }
-
-    // .episode-description {
-    //   grid-area: episode-description;
-    //   background-color: $blue;
-    // }
-
-    $wobbleTime: 0.5s;
-    $fontSize: 2.3em;
-
-    #countdown {
+    .episode {
+        display: grid;
+        text-align: left;
+        min-height: 200px;
+        width: 50vw;
+        align-items: center;
+        grid-template-areas: "title summary";
+        grid-template-columns: 1.5fr 3fr;
+        justify-items: start;
+        background-color: $yellow;
+        justify-self: center;
+        border-radius: 10px;
+        border: 8px $yellow solid;
+        /*proceed with caution*/
+        /*box-shadow: 13px 21px 200px 0px rgba(159, 207, 178, 0.93);*/
+        box-shadow: 13px 21px 200px 0px rgba(0, 0, 0, 0.43);
+    }
+    a {
+        font-weight: 600;
+        text-align: center;
+        justify-self: normal;
+        height: 100%;
         font-family: $accent;
-        align-self: center;
-        color: $yellow;
-        text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
-        font-size: 1.8em;
-        font-weight: 900;
-
-        .letter {
-            font-size: 0.9em;
-        }
+        font-size: 1.5em;
     }
 
-    .wobblyText {
-        line-height: 1;
-        color: $yellow;
-        font-family: $accent;
-        font-weight: 900;
-        font-size: $fontSize;
-        margin: 0;
-        padding-left: 1em;
-        padding-right: 1em;
-        letter-spacing: +0.1em;
-        text-shadow: 0.04em 0.035em 0 rgba(0, 0, 0, 0.7);
-        span {
-            position: relative;
-            top: 0;
-            left: 0;
-            transition: all $wobbleTime;
-        }
+    .linktitle {
+        margin-top: 50%;
     }
-    @media (min-width: 320px) and (max-width: 480px) {
-        .wobblyText {
-            font-size: 1em;
-        }
-        #countdown {
-            font-size: 0.8em;
-            .letter {
-                font-size: 0.7em;
-            }
+    .title {
+        grid-area: title;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        text-align: center;
+    }
+
+    .number {
+        font-size: 1.3em;
+    }
+    .summary {
+        grid-area: summary;
+        padding: 2em;
+        background-color: white;
+    }
+
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media (min-width: 0px) and (max-width: 770px) {
+        .episode {
+            grid-template-areas: "title" "summary";
+            grid-template-columns: none;
         }
     }
 
