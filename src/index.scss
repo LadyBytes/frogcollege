@@ -256,7 +256,7 @@ $red: #c60600;
     border-top: 2px white solid;
     background-color: $red;
     padding-top: 4em;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     // font-size: 4em;
     align-items: center;
@@ -265,13 +265,14 @@ $red: #c60600;
     // margin-left: 2em;
 
     .episode {
+        margin-bottom: 1.5em;
         display: grid;
         text-align: left;
-        min-height: 200px;
-        width: 50vw;
+        min-height: 150px;
+        width: 60vw;
         align-items: center;
         grid-template-areas: "title summary";
-        grid-template-columns: 1.5fr 3fr;
+        grid-template-columns: 1fr 3fr;
         justify-items: start;
         background-color: $yellow;
         justify-self: center;
@@ -280,44 +281,74 @@ $red: #c60600;
         /*proceed with caution*/
         /*box-shadow: 13px 21px 200px 0px rgba(159, 207, 178, 0.93);*/
         box-shadow: 13px 21px 200px 0px rgba(0, 0, 0, 0.43);
-    }
-    a {
-        font-weight: 600;
-        text-align: center;
-        justify-self: normal;
-        height: 100%;
-        font-family: $accent;
-        font-size: 1.5em;
+
+        a {
+            font-weight: 600;
+            text-align: center;
+            justify-self: normal;
+            height: 150px;
+            font-family: $accent;
+            font-size: 1.5em;
+        }
+
+        .linktitle {
+            margin-top: 50%;
+        }
+        .title {
+            grid-area: title;
+            height: 100%;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            text-align: center;
+        }
+
+        .number {
+            padding: 0.5em;
+            padding-top: 0.6em;
+            font-size: 1.3em;
+        }
+        .summary {
+            grid-area: summary;
+            // padding: 1em;
+            background-color: white;
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+
+            .summary-text {
+                padding-left: 0.5em;
+            }
+            .socials {
+                margin: 1em auto;
+                justify-items: center;
+                display: grid;
+                grid-template-areas: "spotify soundcloud itunes ";
+            }
+        }
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
-    .linktitle {
-        margin-top: 50%;
-    }
-    .title {
-        grid-area: title;
-        height: 100%;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        text-align: center;
-    }
-
-    .number {
-        font-size: 1.3em;
-    }
-    .summary {
-        grid-area: summary;
-        padding: 2em;
-        background-color: white;
-    }
-
-    img {
-        height: 100%;
-        object-fit: contain;
+    .episode:nth-child(odd) {
+        grid-template-areas: "summary title";
+        grid-template-columns: 3fr 1fr;
+        background-color: $yellow;
+        border: 8px $yellow solid;
+        // .summary {
+        //     background-color: $yellow;
+        // }
     }
 
     @media (min-width: 0px) and (max-width: 770px) {
         .episode {
             grid-template-areas: "title" "summary";
+            grid-template-columns: none;
+        }
+        .episode:nth-child(odd) {
+            grid-template-areas: "summary" "title";
             grid-template-columns: none;
         }
     }

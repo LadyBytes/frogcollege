@@ -2,6 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import { Paper, Fade } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faSpotify,
+  faSoundcloud,
+  faItunesNote
+} from "@fortawesome/free-brands-svg-icons";
 
 import frog from "../images/frog.png";
 
@@ -13,6 +20,7 @@ import { Config } from "../update_me.js";
 import "./EpisodeLog.scss";
 
 var episodes = Config.EPISODES;
+// var episodes = Config.UPCOMING;
 
 function EpisodeLog(props) {
   const { classes } = props;
@@ -25,15 +33,20 @@ function EpisodeLog(props) {
             // <Paper>
             <div className="episode">
               <a target="_blank" href={item.link}>
-                <div className="linktitle">
-                  I. <br />
-                  Welcome to College{" "}
-                </div>
+                <img src={frog} />
               </a>
 
               <div className="summary">
-                <div className="number">{item.title.split(": ")[0]}</div>
-                {item.summary}
+                <div className="number">{item.title}</div>
+                <div className="summary-text">{item.summary}</div>
+                <div className="socials">
+                  <div>
+                    <a target="_blank" href={item.link}>
+                      <FontAwesomeIcon size="1x" icon={faSoundcloud} />
+                    </a>
+                  </div>
+                  
+                </div>
               </div>
             </div>
             // </Paper>
@@ -61,6 +74,17 @@ const styles = theme => ({
     // fontFamily: "'Raleway'"
   }
 });
+
+// <div>
+                  //   <a target="_blank" href={item.link}>
+                  //     <FontAwesomeIcon size="1x" icon={faSpotify} />
+                  //   </a>
+                  // </div>
+                  // <div>
+                  //   <a target="_blank" href={item.link}>
+                  //     <FontAwesomeIcon size="1x" icon={faItunesNote} />
+                  //   </a>
+                  // </div>
 
 EpisodeLog.propTypes = {
   classes: PropTypes.object.isRequired
