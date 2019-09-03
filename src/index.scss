@@ -322,7 +322,8 @@ $red: #c60600;
                 margin: 1em auto;
                 justify-items: center;
                 display: grid;
-                grid-template-areas: "spotify soundcloud itunes ";
+                grid-template-areas: "soundcloud ";
+                // grid-template-areas: "spotify soundcloud itunes ";
             }
         }
 
@@ -332,7 +333,7 @@ $red: #c60600;
         }
     }
 
-    .episode:nth-child(odd) {
+    .episode:nth-child(even) {
         grid-template-areas: "summary title";
         grid-template-columns: 3fr 1fr;
         background-color: $yellow;
@@ -347,7 +348,7 @@ $red: #c60600;
             grid-template-areas: "title" "summary";
             grid-template-columns: none;
         }
-        .episode:nth-child(odd) {
+        .episode:nth-child(even) {
             grid-template-areas: "summary" "title";
             grid-template-columns: none;
         }

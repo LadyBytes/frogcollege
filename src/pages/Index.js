@@ -46,7 +46,7 @@ function Index(props) {
       </div>
       <h1 class="ml6">
         <span class="text-wrapper">
-          <span class="letters">it's here!</span>
+          <span class="letters">out now!</span>
         </span>
       </h1>
       <div class="buttons">

@@ -19,8 +19,8 @@ import { Config } from "../update_me.js";
 
 import "./EpisodeLog.scss";
 
-var episodes = Config.EPISODES;
 // var episodes = Config.UPCOMING;
+var episodes = Config.EPISODES;
 
 function EpisodeLog(props) {
   const { classes } = props;
@@ -45,7 +45,7 @@ function EpisodeLog(props) {
                       <FontAwesomeIcon size="1x" icon={faSoundcloud} />
                     </a>
                   </div>
-                  
+                 
                 </div>
               </div>
             </div>
@@ -75,19 +75,21 @@ const styles = theme => ({
   }
 });
 
-// <div>
-                  //   <a target="_blank" href={item.link}>
-                  //     <FontAwesomeIcon size="1x" icon={faSpotify} />
-                  //   </a>
-                  // </div>
-                  // <div>
-                  //   <a target="_blank" href={item.link}>
-                  //     <FontAwesomeIcon size="1x" icon={faItunesNote} />
-                  //   </a>
-                  // </div>
-
 EpisodeLog.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(EpisodeLog);
+
+
+
+ // <div>
+ //                    <a target="_blank" href={item.link}>
+ //                      <FontAwesomeIcon size="1x" icon={faSpotify} />
+ //                    </a>
+ //                  </div>
+ //                  <div>
+ //                    <a target="_blank" href={item.link}>
+ //                      <FontAwesomeIcon size="1x" icon={faItunesNote} />
+ //                    </a>
+ //                  </div>
