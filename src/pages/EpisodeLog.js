@@ -28,11 +28,13 @@ function EpisodeLog(props) {
   return (
     <div className="EpisodeLog">
       <div className={classes.header}>
+        <p>Episodes</p>
+        <div className="season">Season 1</div>
         {episodes.map(function(item) {
           return (
             // <Paper>
             <div className="episode">
-              <a target="_blank" href={item.link}>
+              <a target="_blank" href={item.spotify_link}>
                 <img src={frog} />
               </a>
 
@@ -41,11 +43,15 @@ function EpisodeLog(props) {
                 <div className="summary-text">{item.summary}</div>
                 <div className="socials">
                   <div>
-                    <a target="_blank" href={item.link}>
+                    <a target="_blank" href={item.spotify_link}>
+                      <FontAwesomeIcon size="1x" icon={faSpotify} />
+                    </a>
+                  </div>
+                  <div>
+                    <a target="_blank" href={item.soundcloud_link}>
                       <FontAwesomeIcon size="1x" icon={faSoundcloud} />
                     </a>
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -70,6 +76,7 @@ const styles = theme => ({
     textAlign: "center",
     fontSize: "1em"
   },
+
   container: {
     // fontFamily: "'Raleway'"
   }
@@ -81,15 +88,13 @@ EpisodeLog.propTypes = {
 
 export default withStyles(styles)(EpisodeLog);
 
-
-
- // <div>
- //                    <a target="_blank" href={item.link}>
- //                      <FontAwesomeIcon size="1x" icon={faSpotify} />
- //                    </a>
- //                  </div>
- //                  <div>
- //                    <a target="_blank" href={item.link}>
- //                      <FontAwesomeIcon size="1x" icon={faItunesNote} />
- //                    </a>
- //                  </div>
+// <div>
+//                    <a target="_blank" href={item.link}>
+//                      <FontAwesomeIcon size="1x" icon={faSpotify} />
+//                    </a>
+//                  </div>
+//                  <div>
+//                    <a target="_blank" href={item.link}>
+//                      <FontAwesomeIcon size="1x" icon={faItunesNote} />
+//                    </a>
+//                  </div>

@@ -5,7 +5,8 @@ export const Config = {
       title: "Episode 1 - Welcome to College",
       summary:
         "On the last day of orientation, Frog finds his first friends, and we meet his first enemy. ",
-      link:
+      spotify_link:  "https://open.spotify.com/episode/5AsSaL0NkY0BJcQX5Mb7YK?si=8Z89Et0wR_SOCFJ7rYvaQg",
+      soundcloud_link:
         "https://soundcloud.com/frogcollege/episode-1-welcome-to-college/s-s0xzO"
     }
   ],
