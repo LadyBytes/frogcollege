@@ -8,16 +8,19 @@ export const Config = {
       spotify_link:  "https://open.spotify.com/episode/5AsSaL0NkY0BJcQX5Mb7YK?si=8Z89Et0wR_SOCFJ7rYvaQg",
       soundcloud_link:
         "https://soundcloud.com/frogcollege/episode-1-welcome-to-college/s-s0xzO"
-    }
-  ],
-  UPCOMING: [
-    {
+    },
+    
+     {
       id: 2,
       title: "Episode 2 - Too Coocoo for English Class",
-      link: "",
+      soundcloud_link: "https://soundcloud.com/frogcollege/episode-2-a-hangovers-guide-to-the-galaxy-professors-ex",
+      spotify_link: "https://open.spotify.com/episode/2eygCKLjnYcup5MrlmmTfj?si=JAM6k1LfSUykocad1EIAsA",
       summary:
         "Roommate helps Treehugger Girl try some unconventional tactics to understand her English assignment. Professor is visited by a woman from his past. "
     },
+  ],
+  UPCOMING: [
+   
 
     {
       id: 3,
