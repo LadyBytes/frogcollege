@@ -18,17 +18,20 @@ export const Config = {
       summary:
         "Roommate helps Treehugger Girl try some unconventional tactics to understand her English assignment. Professor is visited by a woman from his past. "
     },
+    
+     {
+      id: 3,
+      title: "Episode 3 - Building Interests: the Musical!",
+      soundcloud_link: "https://soundcloud.com/frogcollege/episode-3-the-involvement-fair",
+      spotify_link: "https://open.spotify.com/episode/0QcQwNZc1kmaBGQDUCcmvG?si=8Bc39U1GQceq8pHRnuRIEQ", 
+      summary:
+        "Frog has trouble being interested in extra curriculars. Frog Mom asks Professor for some tutoring."
+    },
   ],
   UPCOMING: [
    
 
-    {
-      id: 3,
-      title: "Episode 3 - Building Interests: the Musical!",
-      link: "",
-      summary:
-        "Frog has trouble being interested in extra curriculars. Frog Mom asks Professor for some tutoring."
-    },
+   
 
     {
       id: 4,
