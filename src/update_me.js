@@ -27,19 +27,21 @@ export const Config = {
       summary:
         "Frog has trouble being interested in extra curriculars. Frog Mom asks Professor for some tutoring."
     },
+     {
+      id: 4,
+      title: "Episode 4 - Homecoming",
+      soundcloud_link: "https://soundcloud.com/frogcollege/full-episode-4-oct-14",
+      spotify_link: "https://open.spotify.com/episode/42gjm7AYKS29o1y3OzoKzs?si=s4bMsnbPRKq7bGvQgGyNQQ", 
+      summary:
+        "Frog and Treehugger Girl have trouble adjusting to college life, while Roommate thrives. Professor and Frog Mom struggle to keep their studying a secret. "
+    },
   ],
   UPCOMING: [
    
 
    
 
-    {
-      id: 4,
-      title: "Episode 4 - Homecoming",
-      link: "",
-      summary:
-        "Frog and Treehugger Girl have trouble adjusting to college life, while Roommate thrives. Professor and Frog Mom struggle to keep their studying a secret. "
-    },
+   
 
     {
       id: 5,
