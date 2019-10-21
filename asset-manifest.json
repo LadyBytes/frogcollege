@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "frogcollege.us/static/css/main.42830359.chunk.css",
+    "main.js": "frogcollege.us/static/js/main.0138321a.chunk.js",
+    "main.js.map": "frogcollege.us/static/js/main.0138321a.chunk.js.map",
+    "runtime-main.js": "frogcollege.us/static/js/runtime-main.f7adb4b8.js",
+    "runtime-main.js.map": "frogcollege.us/static/js/runtime-main.f7adb4b8.js.map",
+    "static/js/2.1da99ad1.chunk.js": "frogcollege.us/static/js/2.1da99ad1.chunk.js",
+    "static/js/2.1da99ad1.chunk.js.map": "frogcollege.us/static/js/2.1da99ad1.chunk.js.map",
+    "index.html": "frogcollege.us/index.html",
+    "precache-manifest.e69071c19d5c9a46d25b7daedcb47e81.js": "frogcollege.us/precache-manifest.e69071c19d5c9a46d25b7daedcb47e81.js",
+    "service-worker.js": "frogcollege.us/service-worker.js",
+    "static/css/main.42830359.chunk.css.map": "frogcollege.us/static/css/main.42830359.chunk.css.map",
+    "static/media/chris.jpg": "frogcollege.us/static/media/chris.c2ad179a.jpg",
+    "static/media/dan.jpg": "frogcollege.us/static/media/dan.0ec0f173.jpg",
+    "static/media/drunk.png": "frogcollege.us/static/media/drunk.102fa10a.png",
+    "static/media/frog.png": "frogcollege.us/static/media/frog.3fb7a033.png",
+    "static/media/frogschool.png": "frogcollege.us/static/media/frogschool.8f8cc71f.png",
+    "static/media/james.jpg": "frogcollege.us/static/media/james.108e1168.jpg",
+    "static/media/jenn.jpg": "frogcollege.us/static/media/jenn.9db0d91a.jpg",
+    "static/media/kat.jpg": "frogcollege.us/static/media/kat.939608a3.jpg",
+    "static/media/kevin.jpg": "frogcollege.us/static/media/kevin.f88cbc88.jpg",
+    "static/media/lisa.jpg": "frogcollege.us/static/media/lisa.01a156f3.jpg",
+    "static/media/meghan.jpg": "frogcollege.us/static/media/meghan.72db26d6.jpg",
+    "static/media/mike.jpg": "frogcollege.us/static/media/mike.eff08663.jpg",
+    "static/media/sam.jpg": "frogcollege.us/static/media/sam.d8afce6b.jpg",
+    "static/media/sara.jpg": "frogcollege.us/static/media/sara.df789f22.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7adb4b8.js",
+    "static/js/2.1da99ad1.chunk.js",
+    "static/css/main.42830359.chunk.css",
+    "static/js/main.0138321a.chunk.js"
+  ]
+}
