@@ -35,6 +35,13 @@ export const Config = {
       summary:
         "Frog and Treehugger Girl have trouble adjusting to college life, while Roommate thrives. Professor and Frog Mom struggle to keep their studying a secret. "
     },
+      {
+      id: 5,
+      title: "Episode 5 - The Twilight Toad: Halloween Special!",
+      soundcloud_link: "https://soundcloud.com/frogcollege/halloween/s-5Ndzt",
+      spotify_link: "https://open.spotify.com/show/79ao86vSFJsCdSPFCWinhh?si=xJdV3YqsSYu26CrxInerXQ",
+      summary: "Frog wakes up transported to an ulterior universe! Spooky!"
+    },
   ],
   UPCOMING: [
    
@@ -43,12 +50,7 @@ export const Config = {
 
    
 
-    {
-      id: 5,
-      title: "Episode 5 - The Twilight Toad: Halloween Special!",
-      link: "",
-      summary: "Frog wakes up transported to an ulterior universe! Spooky!"
-    },
+  
     {
       id: 6,
       title: "Episode 6 - Frog’s First Thanksgiving",
