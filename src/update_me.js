@@ -39,7 +39,7 @@ export const Config = {
       id: 5,
       title: "Episode 5 - The Twilight Toad: Halloween Special!",
       soundcloud_link: "https://soundcloud.com/frogcollege/halloween/s-5Ndzt",
-      spotify_link: "https://open.spotify.com/show/79ao86vSFJsCdSPFCWinhh?si=xJdV3YqsSYu26CrxInerXQ",
+      spotify_link: "https://open.spotify.com/episode/4e34mmrDJZKQiQn6t3RJNb?si=Czj81DraTWO7DB6TVLe2WQ",
       summary: "Frog wakes up transported to an ulterior universe! Spooky!"
     },
   ],
