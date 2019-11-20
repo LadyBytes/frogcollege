@@ -41,7 +41,17 @@ export const Config = {
       soundcloud_link: "https://soundcloud.com/frogcollege/halloween/s-5Ndzt",
       spotify_link: "https://open.spotify.com/episode/4e34mmrDJZKQiQn6t3RJNb?si=Czj81DraTWO7DB6TVLe2WQ",
       summary: "Frog wakes up transported to an ulterior universe! Spooky!"
+    },   
+    
+    {
+      id: 6,
+      title: "Episode 6 - Frog’s First Thanksgiving",
+      soundcloud_link: "https://soundcloud.com/frogcollege/thanksgiving",
+      "spotify_link": "https://open.spotify.com/episode/2rTt3tPX0lAGdP4h0TB6aL?si=pOcd2mwpQXKBlNcBPuusNA",
+      summary:
+        "Professor and Scientist bond over their many failed Thanksgivings. Treehugger Girl can’t make it to her holiday plans. "
     },
+
   ],
   UPCOMING: [
    
