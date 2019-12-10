@@ -51,6 +51,25 @@ export const Config = {
       summary:
         "Professor and Scientist bond over their many failed Thanksgivings. Treehugger Girl can’t make it to her holiday plans. "
     },
+    
+    
+    {
+      id: 6,
+      title: "Episode 6 - Frog’s First Thanksgiving",
+      soundcloud_link: "https://soundcloud.com/frogcollege/thanksgiving",
+      spotify_link: "https://open.spotify.com/episode/2rTt3tPX0lAGdP4h0TB6aL?si=7snwRN12RLqBISzzYRCCUA",
+      summary:
+        "Professor and Scientist bond over their many failed Thanksgivings. Treehugger Girl can’t make it to her holiday plans. "
+    },
+
+    {
+      id: 7,
+      title: "Episode 7 - The Finals Countdown",
+      soundcloud_link: "https://soundcloud.com/frogcollege/episode-7-the-finals-countdown",
+      spotify_link: "https://open.spotify.com/episode/6qxlSFBPJyN4mKS6iIk6uL?si=x_vhV8moQZyB7ZpjE7TlUg",
+      summary:
+        "The students prepare for finals, and Treehugger Girl protests to protect her friends. Frog Mom and Professor hit a major roadblock in their plans."
+    },
 
   ],
   UPCOMING: [
@@ -61,21 +80,6 @@ export const Config = {
    
 
   
-    {
-      id: 6,
-      title: "Episode 6 - Frog’s First Thanksgiving",
-      link: "",
-      summary:
-        "Professor and Scientist bond over their many failed Thanksgivings. Treehugger Girl can’t make it to her holiday plans. "
-    },
-
-    {
-      id: 7,
-      title: "Episode 7 - Frog Finals",
-      link: "",
-      summary:
-        "The students prepare for finals, and Treehugger Girl protests to protect her friends. Frog Mom and Professor hit a major roadblock in their plans."
-    },
 
     {
       id: 8,
