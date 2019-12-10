@@ -62,7 +62,13 @@ export const Config = {
         "Professor and Scientist bond over their many failed Thanksgivings. Treehugger Girl can’t make it to her holiday plans. "
     },
 
-    {
+    
+
+  ],
+  UPCOMING: [
+   
+
+   {
       id: 7,
       title: "Episode 7 - The Finals Countdown",
       soundcloud_link: "https://soundcloud.com/frogcollege/episode-7-the-finals-countdown",
@@ -70,12 +76,6 @@ export const Config = {
       summary:
         "The students prepare for finals, and Treehugger Girl protests to protect her friends. Frog Mom and Professor hit a major roadblock in their plans."
     },
-
-  ],
-  UPCOMING: [
-   
-
-   
 
    
 
